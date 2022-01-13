@@ -11,19 +11,32 @@ p{
     margin-top: 1rem;
 }
 
+
 table{
     position: absolute;
     top: 9rem;
 }
+span{
+    font-size: 10px;
+    color: rgb(78, 78, 78);
+
+}
+
 
 .grey{
-
-    padding: 9px .75rem 0px .75rem;
+    padding: 0px .75rem 0px .75rem;
+    /* background-color: grey; */
+    border-radius: 5px;
+}
+.grey-new{
+    padding: 0px .75rem 0px .75rem;
     /* background-color: grey; */
     border-radius: 5px;
 }
 
-
+.fa-star, .fa-long-arrow-alt-left{
+    color: black;
+}
 
 
 
@@ -39,7 +52,7 @@ table{
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: 55%;
+    height: 60%;
     width: 20%;
     align-items: center;
     box-shadow: 1px 0px 10px #464646;
@@ -47,9 +60,14 @@ table{
 
 button{
     background: none;
-    height: 100%;
+
     width: 100%;
     cursor: pointer;
+}
+
+span{
+    position: relative;
+    left: 16px;
 }
 
 
@@ -61,7 +79,93 @@ button{
     height: 40px;
 }
 
+
+
 i{
     color: white;
     font-size: 15px;
+}
+
+
+button:after {
+    background: grey;
+    position: relative;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+
+  /* ------------------ */
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#para{
+    height: 25px;
+    color: rgb(118, 118, 255);
+}
+
+.container{
+    height: 100vh;
+    background-color: rgb(83, 130, 231);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 70%;
+    width: 25%;
+    box-shadow: 1px 0px 10px #464646;
+}
+
+.row{
+    display: flex;
+}
+.element{
+    cursor: pointer;
+    padding: .6rem;
+    margin: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+span{
+    font-size: 10px;
+    margin: 0;
+    
+}
+.inputDiv{
+    margin-bottom: .3rem;
+}
+.fas{
+    font-size: 20px;
+}
+
+#phone{
+    background-color: rgb(106, 228, 106);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 10px;
+}
+#phone .fas{
+    color: white;
 }
