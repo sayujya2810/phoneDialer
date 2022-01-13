@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <!-- The input which is updated onClick event -->
+        <input type="text" id="mainInput" name="inputText" value="">
+        <table>
+            <tr>
+                <td>
+                    <button value="1" onclick="addInput(1)">
+                        1
+                    </button>
+                </td>
+                <td>
+                    <button value="2" onclick="addInput(2)">
+                        2
+                    </button>
+                </td>
+                <td>
+                    <button value="3" onclick="addInput(3)">
+                        3
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button value="4" onclick="addInput(4)">
+                        4
+                    </button>
+                </td>
+                <td>
+                    <button value="5" onclick="addInput(5)">
+                        5
+                    </button>
+                </td>
+                <td>
+                    <button value="6" onclick="addInput(6)">
+                        6
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button value="7" onclick="addInput(7)">
+                        7
+                    </button>
+                </td>
+                <td>
+                    <button value="8" onclick="addInput(8)">
+                        8
+                    </button>
+                </td>
+                <td>
+                    <button value="9" onclick="addInput(9)">
+                        9
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                
+                <td>
+                    <button value="*" onclick="addInput('*')">
+                        *
+                    </button>
+                </td>
+                <td>
+                    <button value="0" onclick="addInput(0)">
+                        0
+                    </button>
+                </td>
+                <td>
+                    <button value="0" onclick="addInput('#')">
+                        #
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button>
+                        **<!-- star image -->
+                    </button>
+                </td>
+                <td>
+                    <button>
+                        p
+                    </button>
+                </td>
+                <td>
+                    <button onclick="deleteText()">
+                        <!-- backArraw Image --> <-
+                    </button>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
