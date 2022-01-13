@@ -5,102 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Main container -->
     <div class="container">
         <!-- The input which is updated onClick event -->
-        <input type="text" id="mainInput" name="inputText" value="">
-        <table>
-            <tr>
-                <td>
-                    <button value="1" onclick="addInput(1)">
-                        1
-                    </button>
-                </td>
-                <td>
-                    <button value="2" onclick="addInput(2)">
-                        2
-                    </button>
-                </td>
-                <td>
-                    <button value="3" onclick="addInput(3)">
-                        3
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button value="4" onclick="addInput(4)">
-                        4
-                    </button>
-                </td>
-                <td>
-                    <button value="5" onclick="addInput(5)">
-                        5
-                    </button>
-                </td>
-                <td>
-                    <button value="6" onclick="addInput(6)">
-                        6
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button value="7" onclick="addInput(7)">
-                        7
-                    </button>
-                </td>
-                <td>
-                    <button value="8" onclick="addInput(8)">
-                        8
-                    </button>
-                </td>
-                <td>
-                    <button value="9" onclick="addInput(9)">
-                        9
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                
-                <td>
-                    <button value="*" onclick="addInput('*')">
-                        *
-                    </button>
-                </td>
-                <td>
-                    <button value="0" onclick="addInput(0)">
-                        0
-                    </button>
-                </td>
-                <td>
-                    <button value="0" onclick="addInput('#')">
-                        #
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button>
-                        **<!-- star image -->
-                    </button>
-                </td>
-                <td>
-                    <button>
-                        p
-                    </button>
-                </td>
-                <td>
-                    <button onclick="deleteText()">
-                        <!-- backArraw Image --> <-
-                    </button>
-                </td>
-            </tr>
-        </table>
+        <div class="card">
+            <!-- <input type="text" id="mainInput" name="inputText" value=""> -->
+            <p id="para">   </p>
+            <table>
+                <tr>
+                    <td class="grey">
+                        <button value="1" onclick="addInput(1)">
+                            1
+                        </button>
+                    </td>
+                    <td class="grey">
+                        <button value="2" onclick="addInput(2)">
+                            2
+                        </button>
+                    </td>
+                    <td class="grey">
+                        <button value="3" onclick="addInput(3)">
+                            3
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="grey">
+                        <button value="4" onclick="addInput(4)">
+                            4
+                        </button>
+                    </td>
+                    <td class="grey">
+                        <button value="5" onclick="addInput(5)">
+                            5
+                        </button>
+                    </td>
+                    <td class="grey">
+                        <button value="6" onclick="addInput(6)">
+                            6
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="grey">
+                        <button value="7" onclick="addInput(7)">
+                            7
+                        </button>
+                    </td>
+                    <td class="grey">
+                        <button value="8" onclick="addInput(8)">
+                            8
+                        </button>
+                    </td>
+                    <td class="grey">
+                        <button value="9" onclick="addInput(9)">
+                            9
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td class="grey">
+                        <button value="*" onclick="addInput('*')">
+                            *
+                        </button>
+                    </td>
+                    <td class="grey">
+                        <button value="0" onclick="addInput(0)">
+                            0
+                        </button>
+                    </td>
+                    <td class="grey">
+                        <button value="#" onclick="addInput('#')">
+                            #
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="grey">
+                        <button>
+                            **<!-- star image -->
+                        </button>
+                    </td>
+                    <td class="grey">
+                        <button class="green">
+                            <i class="fas fa-phone"></i>
+                        </button>
+                    </td>
+                    <td class="grey">
+                        <button onclick="deleteText()">
+                            <!-- backArraw Image --> <-
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
     </div>
+    
     <script src="app.js"></script>
 </body>
 </html>
