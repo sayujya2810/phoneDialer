@@ -10,115 +10,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- Main container -->
     <div class="container">
-        <!-- The input which is updated onClick event -->
         <div class="card">
-            <!-- this para will be appended with the values -->
-            <p id="para">   </p>
-            <table>
-                <tr>
-                    <td class="grey">
-                        <button value="1" onclick="addInput(1)">
-                            1<br>
-                            <span>.</span>
-                        </button>
-                    </td>
-                    <td class="grey">
-                        <button value="2" onclick="addInput(2)">
-                            2
-                        </button>
-                        <span>ABC</span>
-                    </td>
-                    <td class="grey">
-                        <button value="3" onclick="addInput(3)">
-                            3
-                        </button>
-                        <span>DEF</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="grey">
-                        <button value="4" onclick="addInput(4)">
-                            4
-                        </button>
-                        <span>GHI</span>
-                    </td>
-                    <td class="grey">
-                        <button value="5" onclick="addInput(5)">
-                            5
-                        </button>
-                        <span>JKL</span>
-                    </td>
-                    <td class="grey">
-                        <button value="6" onclick="addInput(6)">
-                            6
-                        </button>
-                        <span>MNO</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="grey">
-                        <button value="7" onclick="addInput(7)">
-                            7
-                        </button>
-                        <span>PQRS</span>
-                    </td>
-                    <td class="grey">
-                        <button value="8" onclick="addInput(8)">
-                            8
-                        </button>
-                        <span>TUV</span>
-                    </td>
-                    <td class="grey">
-                        <button value="9" onclick="addInput(9)">
-                            9
-                        </button>
-                        <span>WXYZ</span>
-                    </td>
-                </tr>
-                <tr>
-                    
-                    <td class="grey">
-                        <button value="*" onclick="addInput('*')">
-                            *
-                        </button>
-                    </td>
-                    <td class="grey">
-                        <button value="0" onclick="addInput(0)">
-                            0
-                        </button>
-                    </td>
-                    <td class="grey">
-                        <button value="#" onclick="addInput('#')">
-                            #
-                        </button>
-                    </td>
-                </tr>
-                <br>
-                <tr>
-                    <td class="grey">
-                        <button>
-                            <i class="far fa-star"></i>
-                        </button>
-                    </td>
-                    <td class="grey-new">
-                        <button class="green">
-                            <i class="fas fa-phone"></i>
-                        </button>
-                    </td>
-                    <td class="grey">
-                        <button onclick="deleteText()">
-                            <!-- backArraw Image --> 
-                            <i class="fas fa-long-arrow-alt-left"></i>
-                        </button>
-                    </td>
-                </tr>
-            </table>
+            <div class="inputDiv">
+                <p id="para"></p>
+            </div>
+            <div class="row">
+                <div class="element anim" onclick="addInput(1)">1</div>
+                <div class="element anim" onclick="addInput(2)">2<br><span>ABC</span></div>
+                <div class="element anim" onclick="addInput(3)">3<br><span>DEF</span></div>
+            </div>
+            <div class="row">
+                <div class="element anim" onclick="addInput(4)">4<br><span>GHI</span></div>
+                <div class="element anim" onclick="addInput(5)">5<br><span>JKL</span></div>
+                <div class="element anim" onclick="addInput(6)">6<br><span>MNO</span></div>
+            </div>
+            <div class="row">
+                <div class="element anim" onclick="addInput(7)">7<br><span>PQRS</span></div>
+                <div class="element anim" onclick="addInput(8)">8<br><span>TUV</span></div>
+                <div class="element anim" onclick="addInput(9)">9<br><span>WXYZ</span></div>
+            </div>
+            <div class="row">
+                <div class="element anim" onclick="addInput('*')">*</div>
+                <div class="element anim" onclick="addInput(0)">0</div>
+                <div class="element anim" onclick="addInput('#')">#</div>
+            </div>
+            <div class="row">
+                <div class="element anim"><i class="far fa-star"></i></div>
+                <div class="element" id="phone" ><i class="fas fa-phone"></i></div>
+                <div class="element anim" onclick="deleteText()"><i class="fas fa-long-arrow-alt-left"></i></div>
+            </div>
         </div>
-
+        
     </div>
-    
     <script src="app.js"></script>
 </body>
 </html>
